@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Logo Icon Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Logo Icon Generator</h1>
+    <canvas id="canvas" width="200" height="200"></canvas>
+
+    <div class="controls">
+        <!-- Select Image Button -->
+        <button id="selectImageBtn">Select Image</button><br><br>
+
+        <label for="scale">Size:</label>
+        <input type="range" id="scale" min="0.1" max="3" step="0.1" value="1"><br><br>
+
+        <label for="rotation">Rotation:</label>
+        <input type="range" id="rotation" min="0" max="360" step="1" value="0"><br><br>
+
+        <label for="bgColor">Background Color:</label>
+        <input type="color" id="bgColor" value="#ffffff"><br>
+        <button onclick="setTransparent()">Set Transparent</button><br><br>
+
+        <label for="roundRadius">Rounded Radius: </label>
+        <input type="range" id="roundRadius" min="0" max="300" value="0"><br><br>
+
+        <!-- Input for File Name -->
+        <label for="filename">Enter File Name:</label>
+        <input type="text" id="filename" placeholder="logo.png" />
+
+        <button id="saveBtn">Save as PNG</button>
+    </div>
+
+    <!-- Modal for Selecting Image -->
+    <div id="imageModal">
+        <div id="imageModalContent">
+            <h2>Select Image</h2>
+            <div class="image-grid" id="imageGrid"></div>
+        </div>
+    </div>
+
+    <script src="icown.js"></script>
+</body>
+</html>
