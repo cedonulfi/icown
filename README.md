@@ -6,7 +6,7 @@ iCown is a simple yet powerful web-based application that allows users to create
 - **Easy-to-use interface**: Create logos and icons with intuitive tools and straightforward options.
 - **HTML5 Canvas support**: Leverages the Canvas API for drawing and editing images.
 - **Real-time modifications**: Use HTML forms and JavaScript to instantly apply adjustments and see results.
-- **PNG export**: Save your creations in high-quality PNG format.
+- **PNG export**: Quickly Save your creations in PNG format.
 
 ## Technologies Used
 - **HTML5 Canvas** for drawing and rendering images
